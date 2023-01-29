@@ -1,0 +1,36 @@
+{
+  "name": "ui-testing-auth",
+  "version": "1.0.0",
+  "description": "Testing UI with Google auth",
+  "repository": {
+    "type": "git",
+    "url": "https://github.com/adequatica/ui-testing-auth"
+  },
+  "author": "Andrey Enin <enotramone@gmail.com>",
+  "license": "MIT",
+  "engines": {
+    "node": ">=14"
+  },
+  "dependencies": {
+    "@playwright/test": "^1.30.0",
+    "playwright": "^1.30.0",
+    "playwright-extra": "^4.3.5",
+    "puppeteer-extra-plugin-stealth": "^2.11.1"
+  },
+  "devDependencies": {
+    "@typescript-eslint/eslint-plugin": "^5.49.0",
+    "@typescript-eslint/parser": "^5.49.0",
+    "eslint": "^8.32.0",
+    "prettier": "^2.8.3",
+    "typescript": "^4.9.4"
+  },
+  "scripts": {
+    "format": "npx prettier --write .",
+    "lint": "eslint '**/*.{js,ts}'",
+    "lint:fix": "eslint --fix '**/*.{js,ts}'",
+    "test": "playwright test",
+    "test:debug": "PWDEBUG=1 playwright test",
+    "test:debug-extra": "DEBUG=playwright-extra*,puppeteer-extra* PWDEBUG=1 playwright test",
+    "test:install-deps": "playwright install chromium && playwright install-deps chromium"
+  }
+}
