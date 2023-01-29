@@ -12,15 +12,15 @@ Google can detect authentication by «robots», when you try to sign in through 
 
 - [Playwright](https://playwright.dev) — testing framework;
 - [Playwright-extra](https://github.com/berstend/puppeteer-extra/tree/master/packages/playwright-extra) — modular plugin framework for Playwright;
-- [Puppeteer-extra-plugin-stealth](https://github.com/berstend/puppeteer-extra/tree/master/packages/puppeteer-extra-plugin-stealth) – «stealth» plugin to prevent detection.
+- [Puppeteer-extra-plugin-stealth](https://github.com/berstend/puppeteer-extra/tree/master/packages/puppeteer-extra-plugin-stealth) — «stealth» plugin to prevent detection.
 
 Example web site for testing: [CERN](https://home.cern).
 
 ## How to Use
 
 1. Clone repository
-2. Intall dependencies: `npm install`
-3. Intall dependencies for testing framework: `npm run test:install-deps`
+2. Install dependencies: `npm install`
+3. Install dependencies for testing framework: `npm run test:install-deps`
 4. Run tests for the first time:
 
 `USER_LOGIN='{username@gmail.com}' USER_PASS='{password}' npm run test`
