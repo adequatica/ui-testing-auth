@@ -35,7 +35,7 @@ const config: PlaywrightTestConfig = {
     ],
   ],
   /* See https://playwright.dev/docs/test-advanced#global-setup-and-teardown */
-  globalSetup: process.env.SKIP_AUTH ? '' : './lib/authentication-setup',
+  globalSetup: process.env.SKIP_AUTH ? '' : './lib/global-setup',
   /* Shared settings for all the projects below. See https://playwright.dev/docs/api/class-testoptions */
   use: {
     /* Maximum time each action such as `click()` can take. Defaults to 0 (no limit). */
