@@ -2,7 +2,12 @@
 const userLogin = process.env.USER_LOGIN || '';
 const userPass = process.env.USER_PASS || '';
 
-const testUser = {
+type User = {
+  login: string;
+  password: string;
+};
+
+const testUser: User = {
   login: userLogin,
   password: userPass,
 };

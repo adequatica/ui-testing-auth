@@ -8,13 +8,13 @@ When you try to log in through Playwright or Puppeteer, Google can detect authen
 
 ## Stack
 
-[A basic set of packages to test UI](https://github.com/adequatica/ui-testing) with Google authnetication:
+A basic set of packages for [UI testing](https://github.com/adequatica/ui-testing) with Google authnetication:
 
 - [Playwright](https://playwright.dev) — testing framework;
 - [Playwright-extra](https://github.com/berstend/puppeteer-extra/tree/master/packages/playwright-extra) — modular plugin framework for Playwright;
 - [Puppeteer-extra-plugin-stealth](https://github.com/berstend/puppeteer-extra/tree/master/packages/puppeteer-extra-plugin-stealth) — «stealth» plugin to prevent detection.
 
-Example web site for testing: [CERN](https://home.cern).
+Example web site for testing: [CERN](https://home.cern) (used as default URL).
 
 ## How to Use
 
@@ -25,7 +25,7 @@ Example web site for testing: [CERN](https://home.cern).
 
 `USER_LOGIN='{username@gmail.com}' USER_PASS='{password}' npm run test`
 
-5. Run tests with [reusing signed in state](https://playwright.dev/docs/auth#reuse-signed-in-state): 
+5. Run tests with reusing signed in state (skipping authnetication step):
 
 `SKIP_AUTH=true npm run test`
 
@@ -35,8 +35,10 @@ Example web site for testing: [CERN](https://home.cern).
 
 2. When authentication is done the [signed in state](https://playwright.dev/docs/api/class-browsercontext#browser-context-storage-state) saves at `setup/storage-state.json`;
 
-3. When authentication is done the tests start and [reuse signed in state](https://playwright.dev/docs/auth#reuse-signed-in-state);
+3. When authentication is done the tests start and reuse signed in state;
 
 4. To speed up subsequent test runs (for example for debugging) you may skip authentication process by `SKIP_AUTH=true` CLI option (it will work if you already have a file of a signed in state).
 
 Read the full article about this implementation: [Google Authentication with Playwright](https://adequatica.medium.com/google-authentication-with-playwright-8233b207b71a).
+
+**UPDATE**: In recent changes to the Playwright documentation, the [recommended authentication concept](https://playwright.dev/docs/auth#core-concepts) has been changed, but the presented implementation still works.

@@ -9,19 +9,21 @@
   "author": "Andrey Enin <enotramone@gmail.com>",
   "license": "MIT",
   "engines": {
-    "node": ">=14"
+    "node": "^18.0.0"
   },
   "dependencies": {
-    "@playwright/test": "^1.30.0",
-    "playwright": "^1.30.0",
-    "playwright-extra": "^4.3.5",
-    "puppeteer-extra-plugin-stealth": "^2.11.1"
+    "@playwright/test": "^1.33.0",
+    "playwright": "^1.33.0",
+    "playwright-extra": "^4.3.6",
+    "puppeteer-extra-plugin-stealth": "^2.11.2",
+    "puppeteer-extra-plugin-user-data-dir": "^2.4.1",
+    "puppeteer-extra-plugin-user-preferences": "^2.4.1"
   },
   "devDependencies": {
     "@typescript-eslint/eslint-plugin": "^5.49.0",
     "@typescript-eslint/parser": "^5.49.0",
     "eslint": "^8.32.0",
-    "prettier": "^2.8.3",
+    "prettier": "^2.8.8",
     "typescript": "^4.9.4"
   },
   "scripts": {
