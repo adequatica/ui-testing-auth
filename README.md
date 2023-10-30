@@ -1,4 +1,4 @@
-# Testing UI with Google Authnetication
+# Testing UI with Google Authentication
 
 ## Description
 
