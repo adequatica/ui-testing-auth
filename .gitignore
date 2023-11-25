@@ -3,3 +3,4 @@ node_modules/
 setup/
 test-results/
 playwright-report/
+package-lock.json
