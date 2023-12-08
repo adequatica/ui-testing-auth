@@ -11,7 +11,7 @@
     "type": "git",
     "url": "https://github.com/adequatica/ui-testing-auth"
   },
-  "author": "Andrey Enin <enotramone@gmail.com>",
+  "author": "Andrey Enin",
   "license": "MIT",
   "engines": {
     "node": ">=18.0.0"
