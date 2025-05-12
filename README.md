@@ -6,6 +6,8 @@
 
 When you try to log in through Playwright or Puppeteer, Google can detect authentication by «robot», but you can prevent detection by using «stealth» plugin.
 
+Read the full article about this implementation: [Google Authentication with Playwright](https://adequatica.medium.com/google-authentication-with-playwright-8233b207b71a).
+
 ## Stack
 
 A basic set of packages for [UI testing](https://github.com/adequatica/ui-testing) with Google authnetication:
@@ -39,6 +41,8 @@ Example website for testing: [CERN](https://home.cern) (used as default URL).
 
 4. To speed up subsequent test runs (for example, for debugging), you may skip authentication process by `SKIP_AUTH=true` CLI option (it will work if you already have a file of a signed in state).
 
-Read the full article about this implementation: [Google Authentication with Playwright](https://adequatica.medium.com/google-authentication-with-playwright-8233b207b71a).
+---
 
-**UPDATE**: In recent changes to the Playwright documentation, the [recommended authentication concept](https://playwright.dev/docs/auth#core-concepts) has been changed, but the presented implementation still works.
+**UPDATE, February 2023**: In recent changes to the Playwright documentation, the [recommended authentication concept](https://playwright.dev/docs/auth#core-concepts) has been changed, but the approach described in the article still works.
+
+**UPDATE, April 2025:** This approach may be stale cause used packages [playwright-extra](https://www.npmjs.com/package/playwright-extra) and [puppeteer-extra-plugin-stealth](https://www.npmjs.com/package/puppeteer-extra-plugin-stealth) maintenance were stopped in March 2023. Anyway, you can give it a try for your personal needs.
