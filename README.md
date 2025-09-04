@@ -6,7 +6,7 @@
 
 When you try to log in through Playwright or Puppeteer, Google can detect authentication by «robot», but you can prevent detection by using «stealth» plugin.
 
-Read the full article about this implementation: [Google Authentication with Playwright](https://adequatica.medium.com/google-authentication-with-playwright-8233b207b71a).
+Read the full article about this implementation: [Google Authentication with Playwright](https://adequatica.github.io/2023/02/06/google-authentication-with-playwright.html).
 
 ## Stack
 
